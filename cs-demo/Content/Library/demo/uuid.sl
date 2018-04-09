@@ -2,8 +2,8 @@
 #!!
 #! @description: Generated operation description
 #!
-#! @input input_1: Generated description
-#! @input input_2: Generated description
+#! @input : Generated description
+#! @input : Generated description
 #! @output output_1: Generated description
 #! @result SUCCESS: Operation completed successfully.
 #! @result FAILURE: Failure occured during execution.
@@ -13,14 +13,15 @@
 namespace: io.cloudslang.demo
 
 operation:
-    name:uuid
+    name: uuid
+
+
     python_action:
-        script:
+        script: |
           import uuid
-          uuid = str(uuid.uuid1())
+          uuid = str(uuid.uuid1(():
 
-
-    - outputs:
+    outputs:
       - uuid: ${uuid}
 
     results:
